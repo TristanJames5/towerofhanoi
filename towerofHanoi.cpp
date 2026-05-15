@@ -11,6 +11,7 @@ void Tower_hanoi(int n, char from, char desti, char tempo){
 }
 
 int main() {
+    
     int n;
     cout<< "Enter number of disks: ";
     cin >>n;
@@ -18,7 +19,11 @@ int main() {
     cout << "\nSteps:\n";
     Tower_hanoi(n, 'A', 'C', 'B'); // A for the source, C for destination, B for temporary
 
+
     cout << "\nTotal moves: " << ((1 << n) - 1) << endl; 
+
+
 
     return 0;
 }
+
